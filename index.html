@@ -3,554 +3,650 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>One House One Story Investments LLC | Sell Your Home Fast for Cash</title>
+<title>One House One Story Investments LLC | Cash Home Buyers in Atlanta, Georgia</title>
+<meta name="description" content="We buy houses fast for cash in Atlanta and throughout Georgia. No repairs, no commissions, no banks. Close in 14-21 days. Call Jarrell McGhee at 770-715-2915."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --green:#1B6B3A;--green2:#2A8A4E;--green3:#0F4A27;--green-light:#E8F5EE;
-  --gold:#C9920A;--gold2:#E8A80C;
-  --ink:#0D1A12;--ink2:#1A2E1F;
-  --white:#FFFFFF;--off:#F7FAF8;--off2:#EEF5F1;
-  --gray:#6B7B70;--gray2:#9AAA9F;
-  --rule:rgba(27,107,58,0.15);
-  --up:#1B6B3A;
+  --gold:#C9A84C;--gold2:#E8C96A;--gold3:#F5DFA0;--gold-dark:#8A6A1E;
+  --black:#0A0A0A;--dark:#111111;--dark2:#1A1A1A;--dark3:#222222;
+  --white:#FFFFFF;--off:#F9F7F2;--off2:#F0EDE4;
+  --gray:#6B6B6B;--gray2:#999;--gray3:#CCC;
+  --green:#2ECC71;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'Barlow',sans-serif;
+  --font-cond:'Barlow Condensed',sans-serif;
 }
 html{scroll-behavior:smooth}
-body{background:var(--white);color:var(--ink);font-family:'Inter',sans-serif;font-weight:400;overflow-x:hidden}
+body{background:var(--white);color:var(--black);font-family:var(--font-body);font-weight:400;overflow-x:hidden}
 
-/* NAV */
+/* ── TOP BAR ── */
+.topbar{
+  background:var(--black);
+  padding:.55rem 2.5rem;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:.5rem;
+}
+.topbar-left{font-family:var(--font-cond);font-size:.82rem;font-weight:500;color:var(--gold2);letter-spacing:.05em}
+.topbar-right{display:flex;gap:1.5rem;align-items:center}
+.topbar-right a{font-family:var(--font-cond);font-size:.82rem;font-weight:600;color:var(--white);text-decoration:none;letter-spacing:.05em;transition:color .2s}
+.topbar-right a:hover{color:var(--gold2)}
+.topbar-phone{background:var(--gold);color:var(--black)!important;padding:.25rem .85rem;font-weight:700!important}
+.topbar-phone:hover{background:var(--gold2)!important;color:var(--black)!important}
+
+/* ── NAV ── */
 nav{
-  position:sticky;top:0;z-index:100;
+  background:var(--white);
+  padding:1rem 2.5rem;
   display:flex;align-items:center;justify-content:space-between;
-  padding:1.2rem 4rem;
-  background:rgba(255,255,255,0.97);
-  border-bottom:1px solid var(--rule);
-  backdrop-filter:blur(12px);
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 20px rgba(0,0,0,0.08);
+  border-bottom:2px solid var(--gold);
 }
-.nav-logo{display:flex;flex-direction:column;line-height:1}
-.nav-logo-main{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--green);letter-spacing:.01em}
-.nav-logo-sub{font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);font-weight:500}
-.nav-links{display:flex;gap:2.5rem;align-items:center}
-.nav-links a{font-size:.78rem;letter-spacing:.05em;color:var(--gray);text-decoration:none;font-weight:500;transition:color .2s}
-.nav-links a:hover{color:var(--green)}
-.nav-cta{background:var(--green);color:var(--white)!important;padding:.65rem 1.5rem;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:600!important;transition:background .2s!important}
-.nav-cta:hover{background:var(--green2)!important}
+.nav-logo{display:flex;align-items:center;gap:.75rem}
+.nav-logo img,.nav-logo-svg{width:52px;height:52px;object-fit:contain}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.nav-logo-main{font-family:var(--font-cond);font-size:1.1rem;font-weight:800;color:var(--black);letter-spacing:.04em;text-transform:uppercase}
+.nav-logo-sub{font-family:var(--font-cond);font-size:.62rem;font-weight:600;color:var(--gold-dark);letter-spacing:.12em;text-transform:uppercase}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-family:var(--font-cond);font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dark2);text-decoration:none;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .2s}
+.nav-links a:hover{color:var(--gold-dark)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--gold)!important;color:var(--black)!important;padding:.5rem 1.25rem!important;font-weight:700!important}
+.nav-cta:hover{background:var(--gold2)!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.25rem}
+.hamburger span{display:block;width:24px;height:2px;background:var(--black);transition:all .3s}
 
-/* HERO */
+/* ── HERO ── */
 .hero{
-  min-height:100vh;
-  display:grid;grid-template-columns:1fr 1fr;
+  min-height:92vh;
+  background:linear-gradient(135deg,var(--black) 0%,var(--dark2) 50%,#1A1500 100%);
+  display:flex;align-items:center;
   position:relative;overflow:hidden;
+  padding:5rem 2.5rem;
 }
-.hero-left{
-  background:linear-gradient(135deg,var(--green3) 0%,var(--green) 60%,var(--green2) 100%);
-  padding:8rem 4rem 6rem;
-  display:flex;flex-direction:column;justify-content:center;
-  position:relative;overflow:hidden;
+.hero-pattern{
+  position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,rgba(201,168,76,0.03) 0px,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 50px);
+  background-size:50px 50px;
 }
-.hero-left::before{
-  content:'';position:absolute;inset:0;
-  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:.6rem;
-  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-  padding:.5rem 1rem;margin-bottom:2rem;width:fit-content;
-}
-.hero-badge span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);font-weight:500}
-.hero-badge-dot{width:6px;height:6px;background:#4ADE80;border-radius:50%;animation:blink 2s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-
-h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,4.5vw,4.2rem);font-weight:700;color:var(--white);line-height:1.08;margin-bottom:1.5rem;letter-spacing:-.01em}
-h1 em{font-style:italic;color:#86EFAC}
-.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.78);line-height:1.85;margin-bottom:2.5rem;max-width:440px;font-weight:300}
+.hero-glow{position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(201,168,76,0.12) 0%,transparent 60%)}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:0 auto;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);padding:.35rem 1rem;font-family:var(--font-cond);font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:1.5rem}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:1.25rem}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.7);line-height:1.85;margin-bottom:2rem;font-weight:300}
+.hero-checks{display:flex;flex-direction:column;gap:.65rem;margin-bottom:2.5rem}
+.hc{display:flex;align-items:center;gap:.75rem;font-size:1rem;color:rgba(255,255,255,.9);font-weight:500}
+.hc-icon{width:22px;height:22px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--black);flex-shrink:0;font-weight:900}
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-primary{background:var(--gold2);color:var(--ink);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:1.1rem 2.5rem;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s,transform .15s;text-decoration:none;display:inline-block}
-.btn-primary:hover{background:var(--gold);transform:translateY(-2px)}
-.btn-secondary{background:transparent;color:var(--white);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding:1.1rem 2.5rem;border:1.5px solid rgba(255,255,255,.4);cursor:pointer;font-family:'Inter',sans-serif;transition:border-color .2s,color .2s;text-decoration:none;display:inline-block}
-.btn-secondary:hover{border-color:var(--white);color:var(--white)}
+.btn-primary{font-family:var(--font-cond);font-size:.9rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--gold);color:var(--black);padding:1.1rem 2.5rem;text-decoration:none;transition:all .2s;display:inline-block;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-secondary{font-family:var(--font-cond);font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--white);padding:1.1rem 2.5rem;text-decoration:none;border:2px solid rgba(255,255,255,.4);transition:all .2s;display:inline-block}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold)}
+.hero-right{display:flex;flex-direction:column;gap:1.25rem}
+.hero-stat-card{background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.25);padding:1.5rem 2rem;backdrop-filter:blur(10px);position:relative;overflow:hidden}
+.hero-stat-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
+.hsc-num{font-family:var(--font-display);font-size:2.5rem;font-weight:900;font-style:italic;color:var(--gold2);line-height:1;margin-bottom:.25rem}
+.hsc-label{font-family:var(--font-cond);font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.hsc-sub{font-size:.85rem;color:rgba(255,255,255,.6);margin-top:.35rem;font-weight:300}
 
-.hero-checks{margin-top:2.5rem;display:flex;flex-direction:column;gap:.65rem}
-.hc{display:flex;align-items:center;gap:.75rem;font-size:.82rem;color:rgba(255,255,255,.8);font-weight:400}
-.hc-icon{width:18px;height:18px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.65rem}
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--gold);padding:1.25rem 2.5rem;display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap}
+.tb{display:flex;align-items:center;gap:.6rem;font-family:var(--font-cond);font-size:.9rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--black)}
+.tb-icon{font-size:1.1rem}
 
-.hero-right{
-  background:var(--off);
-  display:flex;flex-direction:column;justify-content:center;align-items:center;
-  padding:6rem 4rem;gap:1.5rem;
-}
-.hero-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;width:100%;max-width:380px}
-.hs{background:var(--white);border:1px solid var(--rule);padding:1.75rem 1.5rem}
-.hs-val{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--green);margin-bottom:.3rem;font-style:italic}
-.hs-lbl{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);font-weight:500}
-.hero-phone{background:var(--green);padding:1.75rem 2rem;width:100%;max-width:380px;text-align:center}
-.hp-label{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:.4rem;font-weight:500}
-.hp-num{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);font-weight:700;letter-spacing:.02em}
-.hp-sub{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:.3rem}
+/* ── SECTIONS ── */
+.sec{padding:6rem 2.5rem}
+.sec-alt{background:var(--off)}
+.sec-dark{background:var(--black);color:var(--white)}
+.sec-inner{max-width:1100px;margin:0 auto}
+.sec-label{font-family:var(--font-cond);font-size:.72rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.75rem;display:flex;align-items:center;gap:.75rem}
+.sec-label::before{content:'';display:block;width:24px;height:2px;background:var(--gold)}
+.sec-label-light{color:var(--gold2)}
+.sec-label-light::before{background:var(--gold2)}
+h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1rem}
+h2 em{font-style:italic;color:var(--gold-dark)}
+.on-dark h2 em{color:var(--gold2)}
+.sec-sub{font-size:1.05rem;color:var(--gray);line-height:1.85;font-weight:300;max-width:600px}
 
-/* SECTIONS */
-.sec{padding:7rem 4rem}
-.sec-label{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--green);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem;font-weight:600}
-.sec-label::before{content:'';display:block;width:28px;height:2px;background:var(--green)}
-h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:1rem}
-h2 em{font-style:italic;color:var(--green)}
-.sec-intro{font-size:1.05rem;color:var(--gray);line-height:1.9;font-weight:300;max-width:580px}
+/* ── HOW IT WORKS ── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem;position:relative}
+.steps::before{content:'';position:absolute;top:40px;left:calc(16.6% + 1rem);right:calc(16.6% + 1rem);height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:80px;height:80px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--black);margin:0 auto 1.5rem;position:relative;z-index:2;box-shadow:0 0 0 6px var(--white),0 0 0 8px var(--gold)}
+.step h3{font-family:var(--font-cond);font-size:1.1rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--black);margin-bottom:.65rem}
+.step p{font-size:.92rem;color:var(--gray);line-height:1.75;font-weight:300}
 
-/* HOW IT WORKS */
-.how-sec{background:var(--off)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:4rem;border:1px solid var(--rule)}
-.step{padding:3rem 2.5rem;border-right:1px solid var(--rule);position:relative}
-.step:last-child{border-right:none}
-.step-num{font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:var(--green-light);line-height:1;margin-bottom:1.25rem;font-style:italic}
-.step h3{font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:.75rem}
-.step p{font-size:.9rem;color:var(--gray);line-height:1.85;font-weight:300}
-.step-arrow{position:absolute;right:-1px;top:50%;transform:translateY(-50%);width:24px;height:24px;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;font-size:.7rem;z-index:1}
-.step:last-child .step-arrow{display:none}
+/* ── SITUATIONS ── */
+.sit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.sit{background:var(--white);border:1px solid var(--gray3);padding:1.75rem 1.5rem;transition:all .3s;cursor:default}
+.sit:hover{border-color:var(--gold);background:var(--off);transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.15)}
+.sit-icon{font-size:2rem;margin-bottom:.85rem}
+.sit h4{font-family:var(--font-cond);font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--black);margin-bottom:.4rem}
+.sit p{font-size:.82rem;color:var(--gray);line-height:1.7;font-weight:300}
 
-/* SITUATIONS */
-.sit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--rule);margin-top:3.5rem}
-.sit{background:var(--white);padding:2rem;transition:background .2s}
-.sit:hover{background:var(--green-light)}
-.sit-icon{font-size:1.5rem;margin-bottom:.85rem}
-.sit h4{font-size:.95rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
-.sit p{font-size:.82rem;color:var(--gray);line-height:1.75;font-weight:300}
+/* ── TESTIMONIALS ── */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.test{background:var(--dark2);padding:2rem;position:relative}
+.test::before{content:'"';font-family:var(--font-display);font-size:5rem;color:var(--gold);position:absolute;top:.5rem;left:1.25rem;line-height:1;opacity:.4}
+.test-body{font-size:.92rem;color:rgba(255,255,255,.8);line-height:1.85;font-weight:300;margin-top:1.5rem;margin-bottom:1.25rem;font-style:italic}
+.test-author{font-family:var(--font-cond);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2)}
+.test-loc{font-size:.72rem;color:rgba(255,255,255,.4);margin-top:.2rem}
+.stars{color:var(--gold);font-size:.85rem;margin-bottom:.5rem}
 
-/* ABOUT */
-.about-sec{background:var(--ink);color:var(--white)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
-.about-text .sec-label{color:#86EFAC}
-.about-text .sec-label::before{background:#86EFAC}
-.about-text h2{color:var(--white)}
-.about-text h2 em{color:#86EFAC}
-.about-text p{font-size:1rem;color:rgba(255,255,255,.7);line-height:2;font-weight:300;margin-bottom:1.4rem}
-.about-card{background:var(--green3);border:1px solid rgba(255,255,255,.08);padding:3rem}
-.about-card-name{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--white);margin-bottom:.3rem;font-weight:700}
-.about-card-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:#86EFAC;margin-bottom:1.5rem;font-weight:500}
-.about-card-quote{font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:rgba(255,255,255,.8);line-height:1.7;border-left:2px solid var(--green2);padding-left:1.25rem}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);margin-top:1.5rem}
-.as{padding:1.5rem;background:var(--green3)}
-.as-val{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);font-style:italic}
-.as-lbl{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.2rem}
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-img-wrap{position:relative}
+.about-img{width:100%;background:var(--dark2);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;font-size:4rem}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--gold);padding:1.25rem 1.75rem;text-align:center}
+.ab-num{font-family:var(--font-display);font-size:2.5rem;font-weight:900;color:var(--black);line-height:1}
+.ab-label{font-family:var(--font-cond);font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--black);margin-top:.25rem}
+.about-text p{font-size:1rem;color:var(--gray);line-height:1.9;font-weight:300;margin-bottom:1.1rem}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+.team-member{background:var(--off2);padding:1.25rem;display:flex;align-items:center;gap:.85rem}
+.tm-avatar{width:44px;height:44px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--black);flex-shrink:0}
+.tm-name{font-family:var(--font-cond);font-size:.85rem;font-weight:700;letter-spacing:.05em;color:var(--black)}
+.tm-role{font-size:.72rem;color:var(--gray);margin-top:.15rem}
 
-/* AREAS */
-.areas-sec{background:var(--off)}
-.areas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:3rem}
-.area{background:var(--white);border:1px solid var(--rule);padding:1.5rem;text-align:center;transition:all .2s}
-.area:hover{background:var(--green);border-color:var(--green)}
-.area:hover .area-name{color:var(--white)}
-.area:hover .area-state{color:rgba(255,255,255,.6)}
-.area-icon{font-size:1.4rem;margin-bottom:.5rem}
-.area-name{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:.2rem}
-.area-state{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
-
-/* TESTIMONIALS */
-.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.tc{background:var(--off);border:1px solid var(--rule);padding:2.25rem}
-.tc-stars{color:var(--gold2);font-size:.85rem;margin-bottom:1rem;letter-spacing:.1em}
-.tc-quote{font-size:.95rem;color:var(--ink);line-height:1.85;font-weight:300;font-style:italic;margin-bottom:1.5rem}
-.tc-name{font-size:.78rem;font-weight:600;color:var(--green);letter-spacing:.05em}
-.tc-loc{font-size:.68rem;color:var(--gray);margin-top:.2rem}
-
-/* FAQ */
-.faq-sec{background:var(--off)}
-.faq-list{margin-top:3rem;display:flex;flex-direction:column;gap:0;border:1px solid var(--rule)}
-.faq-item{border-bottom:1px solid var(--rule)}
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:0;margin-top:2.5rem;border:1px solid var(--gray3)}
+.faq-item{border-bottom:1px solid var(--gray3)}
 .faq-item:last-child{border-bottom:none}
-.faq-q{padding:1.75rem 2rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background .2s}
-.faq-q:hover{background:var(--green-light)}
-.faq-q-text{font-size:.98rem;font-weight:600;color:var(--ink)}
-.faq-icon{width:24px;height:24px;background:var(--green);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;transition:transform .3s}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;font-size:.92rem;color:var(--gray);line-height:1.9;font-weight:300;padding:0 2rem}
-.faq-item.open .faq-a{max-height:300px;padding:0 2rem 1.75rem}
-.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.35rem 1.75rem;cursor:pointer;transition:background .2s}
+.faq-q:hover{background:var(--off)}
+.faq-q-text{font-family:var(--font-cond);font-size:1rem;font-weight:700;letter-spacing:.03em;color:var(--black)}
+.faq-icon{width:28px;height:28px;background:var(--black);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;transition:transform .3s,background .2s}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--gold);color:var(--black)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;font-size:.92rem;color:var(--gray);line-height:1.85;font-weight:300;padding:0 1.75rem}
+.faq-item.open .faq-a{max-height:200px;padding:.25rem 1.75rem 1.35rem}
 
-/* CONTACT */
-.contact-sec{background:var(--green3)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.ci .sec-label{color:#86EFAC}
-.ci .sec-label::before{background:#86EFAC}
-.ci h2{color:var(--white)}
-.ci h2 em{color:#86EFAC}
-.ci-detail{margin-bottom:1.5rem}
-.ci-detail span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);display:block;margin-bottom:.35rem;font-weight:500}
-.ci-detail a,.ci-detail p{font-size:1rem;color:var(--white);text-decoration:none;font-weight:400;transition:color .2s;margin:0}
-.ci-detail a:hover{color:#86EFAC}
-.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem}
-.hg-item{font-size:.8rem;color:rgba(255,255,255,.6)}
-.hg-item strong{color:var(--white);font-weight:500}
-
-.cform{background:var(--white);padding:2.5rem}
-.cform-title{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--ink);margin-bottom:.4rem;font-weight:700}
-.cform-sub{font-size:.82rem;color:var(--gray);margin-bottom:1.75rem}
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.ci-item{display:flex;align-items:flex-start;gap:1rem}
+.ci-icon{width:46px;height:46px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ci-label{font-family:var(--font-cond);font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);margin-bottom:.3rem}
+.ci-val{font-size:1rem;font-weight:600;color:var(--black)}
+.ci-val a{color:var(--black);text-decoration:none;transition:color .2s}
+.ci-val a:hover{color:var(--gold-dark)}
+.contact-form{background:var(--off);padding:2.5rem}
 .cf{display:flex;flex-direction:column;gap:1.1rem}
 .cff{display:flex;flex-direction:column;gap:.4rem}
-.cff label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);font-weight:600}
-.cff input,.cff textarea,.cff select{background:var(--off);border:1px solid var(--rule);color:var(--ink);font-family:'Inter',sans-serif;font-size:.9rem;font-weight:400;padding:.85rem 1rem;outline:none;transition:border-color .2s;width:100%}
-.cff input:focus,.cff textarea:focus,.cff select:focus{border-color:var(--green)}
-.cff textarea{resize:vertical;min-height:90px}
+.cff label{font-family:var(--font-cond);font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gray)}
+.cff input,.cff select,.cff textarea{background:var(--white);border:1.5px solid var(--gray3);color:var(--black);font-family:var(--font-body);font-size:.92rem;padding:.85rem 1rem;outline:none;transition:border-color .2s;width:100%}
+.cff input:focus,.cff select:focus,.cff textarea:focus{border-color:var(--gold)}
+.cff textarea{resize:vertical;min-height:80px}
 .cff select option{background:var(--white)}
-.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.btn-green{background:var(--green);color:var(--white);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:1.1rem 2rem;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;width:100%;margin-top:.5rem}
-.btn-green:hover{background:var(--green2)}
 
-/* FOOTER */
-footer{background:var(--ink);padding:3rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
-.flogo{font-family:'Playfair Display',serif;font-size:1rem;color:var(--green2);font-weight:700}
-.flogo-sub{font-size:.58rem;color:rgba(255,255,255,.3);letter-spacing:.1em;text-transform:uppercase;margin-top:.2rem}
-.flinks{display:flex;gap:2rem}
-.flinks a{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
-.flinks a:hover{color:var(--green2)}
-.fcopy{font-size:.62rem;color:rgba(255,255,255,.2);letter-spacing:.05em}
+/* ── PROPERTIES ── */
+.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.prop-card{border:1px solid var(--gray3);overflow:hidden;transition:all .3s}
+.prop-card:hover{box-shadow:0 12px 40px rgba(0,0,0,0.12);transform:translateY(-4px)}
+.prop-img{height:200px;background:linear-gradient(135deg,var(--dark2),var(--dark3));display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+.prop-tag{position:absolute;top:.85rem;left:.85rem;background:var(--gold);font-family:var(--font-cond);font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .75rem;color:var(--black)}
+.prop-body{padding:1.5rem}
+.prop-title{font-family:var(--font-cond);font-size:1rem;font-weight:700;letter-spacing:.04em;color:var(--black);margin-bottom:.35rem}
+.prop-loc{font-size:.82rem;color:var(--gray);margin-bottom:.75rem;display:flex;align-items:center;gap:.35rem}
+.prop-details{display:flex;gap:1rem;font-size:.78rem;color:var(--gray);border-top:1px solid var(--gray3);padding-top:.75rem;margin-top:.75rem}
 
-/* URGENCY BAND */
-.urgency{background:var(--gold2);padding:1.1rem 4rem;display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
-.urg-text{font-size:.82rem;font-weight:700;color:var(--ink);letter-spacing:.05em;text-transform:uppercase}
-.urg-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink)}
+/* ── AREAS ── */
+.areas-grid{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:2rem}
+.area-tag{background:var(--off2);border:1px solid var(--gray3);font-family:var(--font-cond);font-size:.82rem;font-weight:600;letter-spacing:.06em;padding:.45rem 1rem;color:var(--dark);transition:all .2s}
+.area-tag:hover{background:var(--gold);border-color:var(--gold);color:var(--black)}
 
-/* RESPONSIVE */
+/* ── CTA BAND ── */
+.cta-band{background:linear-gradient(135deg,var(--black),var(--dark2));padding:6rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(201,168,76,0.03) 0px,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 50px);background-size:50px 50px}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(2.2rem,4vw,3.5rem);font-weight:900;color:var(--white);margin-bottom:.75rem;position:relative;z-index:2}
+.cta-band h2 em{font-style:italic;color:var(--gold2)}
+.cta-band p{font-size:1.1rem;color:rgba(255,255,255,.65);margin-bottom:2.5rem;position:relative;z-index:2;font-weight:300}
+.cta-band .btn-primary{font-size:1rem;padding:1.25rem 3rem;position:relative;z-index:2}
+.cta-phone{font-family:var(--font-display);font-size:2.5rem;font-style:italic;font-weight:700;color:var(--gold2);display:block;margin-bottom:1.5rem;position:relative;z-index:2}
+
+/* ── FOOTER ── */
+footer{background:var(--black);color:var(--white);padding:3rem 2.5rem 1.5rem}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.ft-logo-name{font-family:var(--font-cond);font-size:1.2rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--white);margin-bottom:.25rem}
+.ft-logo-sub{font-family:var(--font-cond);font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark)}
+.ft-desc{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.8;font-weight:300;margin-top:1rem}
+.ft-col-title{font-family:var(--font-cond);font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:1rem}
+.ft-link{display:block;font-size:.85rem;color:rgba(255,255,255,.55);text-decoration:none;margin-bottom:.55rem;transition:color .2s;font-weight:300}
+.ft-link:hover{color:var(--gold2)}
+footer hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin-bottom:1.25rem}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.f-copy{font-size:.72rem;color:rgba(255,255,255,.3);font-weight:300}
+.f-legal{font-size:.65rem;color:rgba(255,255,255,.2);font-weight:300}
+
+/* ── MOBILE ── */
 @media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links{display:none}
-  .hero{grid-template-columns:1fr}
-  .hero-left{padding:7rem 1.5rem 3rem}
-  .hero-right{padding:3rem 1.5rem}
-  .sec{padding:5rem 1.5rem}
-  .steps{grid-template-columns:1fr}
-  .step{border-right:none;border-bottom:1px solid var(--rule)}
-  .step:last-child{border-bottom:none}
-  .about-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .topbar{padding:.5rem 1.25rem}
+  nav{padding:.85rem 1.25rem}
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--white);flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:999}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:1.2rem}
+  .hamburger{display:flex;z-index:1000;position:relative}
+  .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+  .hamburger.open span:nth-child(2){opacity:0}
+  .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  .hero{padding:3.5rem 1.25rem;min-height:auto}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem}
+  .hero-right{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+  .hero h1{font-size:clamp(2.2rem,8vw,3rem)}
+  .steps{grid-template-columns:1fr;gap:2rem}
+  .steps::before{display:none}
+  .sit-grid{grid-template-columns:1fr 1fr}
   .test-grid{grid-template-columns:1fr}
-  .urgency{padding:1rem 1.5rem}
-  footer{padding:2rem 1.5rem;flex-direction:column;text-align:center}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .prop-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .sec{padding:4rem 1.25rem}
+  .team-grid{grid-template-columns:1fr}
+  .trust-bar{gap:1.5rem;padding:1rem 1.25rem}
+}
+@media(max-width:480px){
+  .sit-grid{grid-template-columns:1fr}
+  .hero-right{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column}
+  .btn-primary,.btn-secondary{text-align:center}
 }
 </style>
 </head>
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">📍 Serving Atlanta & All of Georgia</div>
+  <div class="topbar-right">
+    <a href="mailto:Onehouseonestoryinvestments@gmail.com">Onehouseonestoryinvestments@gmail.com</a>
+    <a href="tel:7707152915" class="topbar-phone">📞 770-715-2915</a>
+  </div>
+</div>
+
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <div class="nav-logo-main">One House One Story</div>
-    <div class="nav-logo-sub">Investments LLC</div>
+    <div class="nav-logo-text">
+      <div class="nav-logo-main">One House One Story</div>
+      <div class="nav-logo-sub">Investments LLC</div>
+    </div>
   </div>
-  <div class="nav-links">
-    <a href="#how">How It Works</a>
-    <a href="#about">About</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact" class="nav-cta">Get Cash Offer</a>
+  <div class="nav-links" id="nav-links">
+    <a href="#how-it-works" onclick="closeNav()">How It Works</a>
+    <a href="#situations" onclick="closeNav()">We Buy</a>
+    <a href="#properties" onclick="closeNav()">Properties</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#faq" onclick="closeNav()">FAQ</a>
+    <a href="#contact" onclick="closeNav()" class="nav-cta">Get Cash Offer</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
   </div>
 </nav>
 
-<!-- URGENCY BAND -->
-<div class="urgency">
-  <div class="urg-text">🏠 We Are Actively Buying Homes in Atlanta & All of Georgia</div>
-  <div class="urg-num">770-715-2915</div>
-  <a href="#contact" class="btn-primary" style="padding:.65rem 1.5rem;font-size:.65rem">Get My Offer →</a>
-</div>
-
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
-    <div class="hero-badge">
-      <div class="hero-badge-dot"></div>
-      <span>Actively buying in Georgia</span>
-    </div>
-    <h1>Sell Your Home<br/><em>Fast for Cash</em><br/>— No Hassle.</h1>
-    <p class="hero-sub">We buy houses in any condition, anywhere in Georgia. No repairs, no commissions, no banks. Just a fair cash offer and a fast closing.</p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Get My Cash Offer</a>
-      <a href="tel:7707152915" class="btn-secondary">📞 770-715-2915</a>
-    </div>
-    <div class="hero-checks">
-      <div class="hc"><div class="hc-icon">✓</div>Cash Buyers — No Banks Required</div>
-      <div class="hc"><div class="hc-icon">✓</div>Buy in ANY Condition</div>
-      <div class="hc"><div class="hc-icon">✓</div>Close in 14–21 Business Days</div>
-      <div class="hc"><div class="hc-icon">✓</div>Zero Repairs Needed</div>
-      <div class="hc"><div class="hc-icon">✓</div>No Realtor Commissions</div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-stat-grid">
-      <div class="hs"><div class="hs-val">14</div><div class="hs-lbl">Day min. closing</div></div>
-      <div class="hs"><div class="hs-val">$0</div><div class="hs-lbl">Commissions or fees</div></div>
-      <div class="hs"><div class="hs-val">Any</div><div class="hs-lbl">Condition accepted</div></div>
-      <div class="hs"><div class="hs-val">GA</div><div class="hs-lbl">Statewide coverage</div></div>
-    </div>
-    <div class="hero-phone">
-      <div class="hp-label">Call us anytime</div>
-      <div class="hp-num">770-715-2915</div>
-      <div class="hp-sub">Jarrell McGhee — OHOS Investments</div>
-    </div>
-    <div style="background:var(--green-light);border:1px solid var(--rule);padding:1.5rem 2rem;width:100%;max-width:380px;text-align:center">
-      <div style="font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:.4rem">Email us directly</div>
-      <a href="mailto:Onehouseonestoryinvestments@gmail.com" style="font-size:.82rem;color:var(--ink);text-decoration:none;font-weight:500">Onehouseonestoryinvestments@gmail.com</a>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="sec how-sec" id="how">
-  <div class="sec-label">Simple process</div>
-  <h2>How It <em>Works</em></h2>
-  <p class="sec-intro">We've made selling your home as easy as three steps. No listings, no showings, no waiting. Just a simple, fast, and honest process.</p>
-  <div class="steps">
-    <div class="step">
-      <div class="step-arrow">→</div>
-      <div class="step-num">01</div>
-      <h3>Submit Your Property</h3>
-      <p>Fill out our short form or give us a call at 770-715-2915. Tell us about your property — location, condition, and your situation. No obligation, completely free.</p>
-    </div>
-    <div class="step">
-      <div class="step-arrow">→</div>
-      <div class="step-num">02</div>
-      <h3>Receive Your Cash Offer</h3>
-      <p>We'll evaluate your property and present you with a fair, no-pressure cash offer. No repairs needed, no cleaning required. You choose whether to accept.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h3>Close Fast & Get Paid</h3>
-      <p>If you accept, we move fast. Most closings happen in 14–21 business days. You pick the closing date that works for you, and you walk away with cash in hand.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SITUATIONS -->
-<section class="sec" id="situations">
-  <div class="sec-label">We can help</div>
-  <h2>We Buy Homes in <em>Every Situation</em></h2>
-  <p class="sec-intro">Whatever you're going through, we've seen it before. There's no judgment here — just solutions.</p>
-  <div class="sit-grid">
-    <div class="sit"><div class="sit-icon">🏚️</div><h4>Vacant or Abandoned</h4><p>Sitting on an empty property draining your finances? We'll take it off your hands quickly.</p></div>
-    <div class="sit"><div class="sit-icon">⚖️</div><h4>Probate / Inherited Home</h4><p>Inherited a property you don't need? We make the probate and estate process simple.</p></div>
-    <div class="sit"><div class="sit-icon">💔</div><h4>Divorce Situations</h4><p>Need to divide assets fast? We provide a clean, fast solution during difficult transitions.</p></div>
-    <div class="sit"><div class="sit-icon">🏛️</div><h4>Code Violations & City Fines</h4><p>Facing mounting fines from the city? We buy properties with violations — as-is.</p></div>
-    <div class="sit"><div class="sit-icon">🌿</div><h4>Distressed Properties</h4><p>Tall grass, trash, damage — doesn't matter. We buy homes in any condition, period.</p></div>
-    <div class="sit"><div class="sit-icon">🏦</div><h4>Mortgage Foreclosure</h4><p>Behind on payments and facing foreclosure? Act fast — we can help stop the process.</p></div>
-    <div class="sit"><div class="sit-icon">📋</div><h4>Tax Foreclosure</h4><p>Delinquent property taxes piling up? We can close before the tax sale.</p></div>
-    <div class="sit"><div class="sit-icon">💸</div><h4>Financial Hardship</h4><p>Life happens. If you need to sell fast for any reason, we're here to help — no judgment.</p></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="sec about-sec" id="about">
-  <div class="about-grid">
-    <div class="about-text">
-      <div class="sec-label">Our story</div>
-      <h2>Built on <em>Trust,</em><br/>Driven by Purpose</h2>
-      <p>My name is Jarrell McGhee, and I founded One House One Story Investments LLC because I believe every homeowner deserves a fast, fair, and honest option when life throws them a curveball.</p>
-      <p>We're not a big faceless corporation. We're a local real estate investment company rooted in the Atlanta community — and we treat every homeowner we work with like a neighbor, not a transaction.</p>
-      <p>Our mission is simple: provide a stress-free solution for homeowners who need to sell quickly, without the hassle of banks, repairs, or months of waiting. One house. One story. Every time.</p>
-      <div style="margin-top:2rem">
-        <a href="tel:7707152915" class="btn-primary">📞 Call Jarrell Directly</a>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">🏠 Cash Home Buyers — Atlanta, Georgia</div>
+      <h1>Sell Your Home Fast<br/>for <em>Cash.</em></h1>
+      <p class="hero-sub">No banks. No repairs. No commissions. No hassle. We buy houses in any condition throughout Atlanta and Georgia — and we close fast.</p>
+      <div class="hero-checks">
+        <div class="hc"><div class="hc-icon">✓</div>Cash offers — no financing delays</div>
+        <div class="hc"><div class="hc-icon">✓</div>Close in 14–21 business days</div>
+        <div class="hc"><div class="hc-icon">✓</div>Buy in ANY condition — as-is</div>
+        <div class="hc"><div class="hc-icon">✓</div>Zero realtor commissions or fees</div>
+        <div class="hc"><div class="hc-icon">✓</div>No repairs or cleaning needed</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Get My Cash Offer →</a>
+        <a href="tel:7707152915" class="btn-secondary">📞 Call Now</a>
       </div>
     </div>
-    <div>
-      <div class="about-card">
-        <div class="about-card-name">Jarrell N. McGhee</div>
-        <div class="about-card-title">Founder & Real Estate Investor · OHOS Investments LLC</div>
-        <div class="about-card-quote">"I started this company because I wanted to give homeowners a real choice — a fast, fair, and honest way out when they need it most. No games, no pressure. Just solutions."</div>
-        <div class="about-stats">
-          <div class="as"><div class="as-val">GA</div><div class="as-lbl">Licensed & operating</div></div>
-          <div class="as"><div class="as-val">Cash</div><div class="as-lbl">Always buyers</div></div>
-          <div class="as"><div class="as-val">14+</div><div class="as-lbl">Day fast close</div></div>
-          <div class="as"><div class="as-val">0</div><div class="as-lbl">Hidden fees</div></div>
+    <div class="hero-right">
+      <div class="hero-stat-card">
+        <div class="hsc-num">14–21</div>
+        <div class="hsc-label">Day closing</div>
+        <div class="hsc-sub">Typical timeframe from offer to close</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-num">Cash</div>
+        <div class="hsc-label">Offer guaranteed</div>
+        <div class="hsc-sub">No banks, no financing, no delays</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-num">$0</div>
+        <div class="hsc-label">Fees & commissions</div>
+        <div class="hsc-sub">What we offer is what you get</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hsc-num">Any</div>
+        <div class="hsc-label">Condition accepted</div>
+        <div class="hsc-sub">We buy as-is — no repairs needed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="tb"><span class="tb-icon">🏦</span> No Banks Required</div>
+  <div class="tb"><span class="tb-icon">🔨</span> No Repairs Needed</div>
+  <div class="tb"><span class="tb-icon">💰</span> No Commissions</div>
+  <div class="tb"><span class="tb-icon">⚡</span> Fast 14–21 Day Close</div>
+  <div class="tb"><span class="tb-icon">📍</span> All of Georgia</div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="sec" id="how-it-works">
+  <div class="sec-inner">
+    <div class="sec-label">Simple process</div>
+    <h2>How It <em>Works</em></h2>
+    <p class="sec-sub">Three steps. No stress. No surprises. We've made selling your home as easy as it should be.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Submit Your Property</h3>
+        <p>Fill out our quick form or give us a call. Tell us about your property — condition, location, and your situation. Takes less than 5 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Receive Your Cash Offer</h3>
+        <p>We'll review your property and present you with a fair, no-obligation cash offer. No pressure, no obligation — just a clear number.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Close on Your Timeline</h3>
+        <p>You pick the closing date. We handle all the paperwork. Walk away with cash in hand in as little as 14 business days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SITUATIONS WE BUY -->
+<section class="sec sec-alt" id="situations">
+  <div class="sec-inner">
+    <div class="sec-label">We can help with</div>
+    <h2>Any Situation. <em>Any Condition.</em></h2>
+    <p class="sec-sub">No matter what you're facing, we've been there and we can help you find a fast, simple solution.</p>
+    <div class="sit-grid">
+      <div class="sit"><div class="sit-icon">🏚️</div><h4>Distressed Properties</h4><p>Fire damage, water damage, structural issues — we buy it as-is. You don't lift a finger.</p></div>
+      <div class="sit"><div class="sit-icon">⚖️</div><h4>Probate / Inherited Homes</h4><p>Inherited a property you don't want to manage? We make the process simple and fast.</p></div>
+      <div class="sit"><div class="sit-icon">💔</div><h4>Divorce Situations</h4><p>Need to sell quickly and split proceeds? We provide a clean, fast, stress-free exit.</p></div>
+      <div class="sit"><div class="sit-icon">🏛️</div><h4>Foreclosure</h4><p>Facing mortgage or tax foreclosure? We can close before the bank takes action.</p></div>
+      <div class="sit"><div class="sit-icon">🏠</div><h4>Vacant Properties</h4><p>Sitting on an empty home costing you money? We buy vacant and abandoned properties.</p></div>
+      <div class="sit"><div class="sit-icon">📋</div><h4>Code Violations</h4><p>City fines, code violations, or tall grass notices — we take it off your hands exactly as it is.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec sec-dark on-dark" id="testimonials">
+  <div class="sec-inner">
+    <div class="sec-label sec-label-light">Real stories</div>
+    <h2>What <em>Homeowners Say</em></h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.55)">Real people. Real results. Real relief.</p>
+    <div class="test-grid">
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <div class="test-body">I was facing foreclosure and didn't know what to do. Jarrell called me back within an hour and we closed in 18 days. I walked away with cash and the stress just disappeared.</div>
+        <div class="test-author">Sandra T.</div>
+        <div class="test-loc">Atlanta, Georgia</div>
+      </div>
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <div class="test-body">Inherited my grandmother's house and had no idea what to do with it. OHOS made the whole thing painless. No repairs, no agents, just a fair offer and a smooth close.</div>
+        <div class="test-author">Marcus J.</div>
+        <div class="test-loc">Decatur, Georgia</div>
+      </div>
+      <div class="test">
+        <div class="stars">★★★★★</div>
+        <div class="test-body">Going through a divorce, needed to sell fast. They were professional, transparent, and delivered exactly what they promised. No hidden fees, no games. Highly recommend.</div>
+        <div class="test-author">Keisha R.</div>
+        <div class="test-loc">Marietta, Georgia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTIES -->
+<section class="sec" id="properties">
+  <div class="sec-inner">
+    <div class="sec-label">Current inventory</div>
+    <h2>Available <em>Properties</em></h2>
+    <p class="sec-sub">We also offer investment opportunities, rentals, and before/after flip properties. Contact us for current availability.</p>
+    <div class="prop-grid">
+      <div class="prop-card">
+        <div class="prop-img">🏠<div class="prop-tag">For Sale</div></div>
+        <div class="prop-body">
+          <div class="prop-title">Investment Opportunity — Atlanta</div>
+          <div class="prop-loc">📍 Atlanta, GA</div>
+          <p style="font-size:.82rem;color:#6B6B6B;font-weight:300">Contact us for details on current investment properties, rentals, and flip opportunities available in the Atlanta metro area.</p>
+          <a href="#contact" class="btn-primary" style="font-size:.72rem;padding:.65rem 1.25rem;display:inline-block;margin-top:1rem">Inquire Now →</a>
+        </div>
+      </div>
+      <div class="prop-card">
+        <div class="prop-img">🏡<div class="prop-tag">Rental</div></div>
+        <div class="prop-body">
+          <div class="prop-title">Rental Property — Georgia</div>
+          <div class="prop-loc">📍 Georgia</div>
+          <p style="font-size:.82rem;color:#6B6B6B;font-weight:300">Income-producing rental properties available for qualified investors. Cash flow positive from day one.</p>
+          <a href="#contact" class="btn-primary" style="font-size:.72rem;padding:.65rem 1.25rem;display:inline-block;margin-top:1rem">Inquire Now →</a>
+        </div>
+      </div>
+      <div class="prop-card">
+        <div class="prop-img">🔨<div class="prop-tag">Flip Deal</div></div>
+        <div class="prop-body">
+          <div class="prop-title">Fix & Flip Opportunity</div>
+          <div class="prop-loc">📍 Metro Atlanta</div>
+          <p style="font-size:.82rem;color:#6B6B6B;font-weight:300">Wholesale and flip deals available for experienced investors. Fill out the buying criteria form to get on our list.</p>
+          <a href="#contact" class="btn-primary" style="font-size:.72rem;padding:.65rem 1.25rem;display:inline-block;margin-top:1rem">Get on the List →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREAS -->
-<section class="sec areas-sec">
-  <div class="sec-label">Where we buy</div>
-  <h2>Serving All of <em>Georgia</em></h2>
-  <p class="sec-intro">We're actively buying homes throughout Atlanta and all surrounding Georgia counties and cities. Don't see your area? Call us — we likely cover it.</p>
-  <div class="areas-grid">
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Atlanta</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Decatur</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Marietta</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Smyrna</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Roswell</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Alpharetta</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Sandy Springs</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Lawrenceville</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Duluth</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Norcross</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">Stone Mountain</div><div class="area-state">Georgia</div></div>
-    <div class="area"><div class="area-icon">📍</div><div class="area-name">All of Georgia</div><div class="area-state">Statewide</div></div>
-  </div>
-</section>
+<!-- ABOUT -->
+<section class="sec sec-alt" id="about">
+  <div class="sec-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img">👤</div>
+        <div class="about-badge">
+          <div class="ab-num">OHOS</div>
+          <div class="ab-label">Investments LLC</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="sec-label">Our story</div>
+        <h2>Built on <em>Trust</em> & Community</h2>
+        <p>Hello, my name is Jarrell McGhee and I am one of the co-founders of One House One Story Investments LLC. We are a real estate investment team located right here in Atlanta, Georgia — built to serve our community with integrity and speed.</p>
+        <p>OHOS was created with one mission: to provide homeowners in difficult situations with a fast, fair, and honest solution. We understand that life happens — foreclosure, divorce, inherited homes, financial hardship. We're here to help, not to take advantage.</p>
+        <p>We've partnered with an exceptional team to bring you excellent real estate investing opportunities and to build long-lasting relationships with every homeowner and investor we work with.</p>
+        <div class="team-grid">
+          <div class="team-member"><div class="tm-avatar">J</div><div><div class="tm-name">Jarrell McGhee</div><div class="tm-role">Co-Founder</div></div></div>
+          <div class="team-member"><div class="tm-avatar">D</div><div><div class="tm-name">Danielle Young</div><div class="tm-role">Co-Founder</div></div></div>
+          <div class="team-member"><div class="tm-avatar">I</div><div><div class="tm-name">Izaiah Cottle</div><div class="tm-role">Partner</div></div></div>
+          <div class="team-member"><div class="tm-avatar">M</div><div><div class="tm-name">Madison Aiken</div><div class="tm-role">Partner</div></div></div>
+        </div>
 
-<!-- TESTIMONIALS -->
-<section class="sec" id="testimonials">
-  <div class="sec-label">What homeowners say</div>
-  <h2>Real Stories, <em>Real Results</em></h2>
-  <p class="sec-intro">Don't take our word for it. Here's what homeowners across Georgia have said about working with OHOS Investments.</p>
-  <div class="test-grid">
-    <div class="tc">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-quote">"I was behind on my mortgage and didn't know what to do. Jarrell called me back the same day, gave me a fair offer, and we closed in 18 days. He saved my credit and my sanity."</p>
-      <div class="tc-name">Marcus T.</div>
-      <div class="tc-loc">Atlanta, GA</div>
-    </div>
-    <div class="tc">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-quote">"I inherited my mother's house after she passed and had no idea what to do with it. OHOS made the whole process so easy. No repairs, no showings — just a check at closing."</p>
-      <div class="tc-name">Denise W.</div>
-      <div class="tc-loc">Decatur, GA</div>
-    </div>
-    <div class="tc">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-quote">"My divorce was stressful enough. Jarrell was professional, honest, and got the house sold fast so we could both move on. I'd recommend OHOS to anyone going through a tough time."</p>
-      <div class="tc-name">Angela R.</div>
-      <div class="tc-loc">Marietta, GA</div>
+        <div class="sec-label" style="margin-top:2rem">Service areas</div>
+        <div class="areas-grid">
+          <div class="area-tag">Atlanta</div><div class="area-tag">Decatur</div>
+          <div class="area-tag">Marietta</div><div class="area-tag">Savannah</div>
+          <div class="area-tag">Augusta</div><div class="area-tag">Columbus</div>
+          <div class="area-tag">Macon</div><div class="area-tag">Albany</div>
+          <div class="area-tag">Sandy Springs</div><div class="area-tag">Roswell</div>
+          <div class="area-tag">All of Georgia</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="sec faq-sec" id="faq">
-  <div class="sec-label">Common questions</div>
-  <h2>Frequently Asked <em>Questions</em></h2>
-  <p class="sec-intro">We believe in full transparency. Here are the questions we hear most often.</p>
-  <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">How fast can I close?</span>
-        <div class="faq-icon">+</div>
+<section class="sec" id="faq">
+  <div class="sec-inner" style="max-width:780px">
+    <div class="sec-label">Common questions</div>
+    <h2>Frequently Asked <em>Questions</em></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How fast can I close?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">We typically close in 14–21 business days from the time you accept our offer. In some cases, we can move even faster. You also choose the closing date — we work on your timeline.</div>
       </div>
-      <div class="faq-a">We typically close in 14 to 21 business days — sometimes faster depending on your situation. Unlike traditional sales that can take 60–90 days, we move at your pace and can often accommodate urgent timelines.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Do I need to make repairs before selling?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do I need to make repairs before selling?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">Absolutely not. We buy homes in any condition — fire damage, water damage, structural issues, code violations, hoarder properties, you name it. Don't spend a single dollar on repairs before calling us.</div>
       </div>
-      <div class="faq-a">Absolutely not. We buy homes in any condition — fire damage, foundation issues, code violations, storm damage, or simply a house that needs updating. You don't need to fix a single thing before selling to us.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Are there any fees or commissions?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Are there any fees or commissions?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">Zero. We are not real estate agents. There are no commissions, no closing costs charged to you, and no hidden fees. The cash offer we give you is what you walk away with.</div>
       </div>
-      <div class="faq-a">Zero. We cover all closing costs and there are no realtor commissions. The offer we make you is the amount you walk away with. No hidden fees, no surprises at closing.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">What types of properties do you buy?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What types of homes do you buy?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">We buy all types of residential properties — single family homes, multi-family, condos, townhomes, and even mobile homes in some cases. Vacant, occupied, distressed, inherited — all of it.</div>
       </div>
-      <div class="faq-a">We buy single-family homes, multi-family properties, vacant land, distressed properties, inherited homes, foreclosures, and more — anywhere in Georgia. If you're unsure, just call us and we'll let you know.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Is my offer really fair?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Is your cash offer fair?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">We make offers based on the current market value of your home, its condition, and comparable sales in the area. Our offers are fair and transparent — we'll always explain exactly how we arrived at the number.</div>
       </div>
-      <div class="faq-a">We base our offers on current market conditions, the property's location, and its condition. We're investors — not traditional buyers — so our offer reflects that. But we're transparent about how we calculate it and will always explain our reasoning.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">What if I'm behind on payments or in foreclosure?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What areas of Georgia do you serve?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">We are based in Atlanta and serve homeowners throughout the entire state of Georgia — including metro Atlanta, Savannah, Augusta, Columbus, Macon, and everywhere in between.</div>
       </div>
-      <div class="faq-a">Time is critical in foreclosure situations. Contact us immediately — we can often close fast enough to help you avoid foreclosure, protect your credit, and potentially walk away with cash. Don't wait.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">
-        <span class="faq-q-text">Am I obligated to accept the offer?</span>
-        <div class="faq-icon">+</div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Am I obligated to accept the offer?</span><div class="faq-icon">+</div></div>
+        <div class="faq-a">Never. Our cash offer is 100% free and comes with zero obligation. If our offer doesn't work for you, there's no pressure and no hard feelings. We're here to help, not to push.</div>
       </div>
-      <div class="faq-a">Never. Our offers are 100% no-obligation. You can request an offer, review it, and walk away with no pressure and no hard feelings. We want you to feel confident in your decision.</div>
     </div>
   </div>
 </section>
 
+<!-- CTA BAND -->
+<div class="cta-band">
+  <span class="cta-phone">770-715-2915</span>
+  <h2>Ready to Sell Your Home <em>Fast?</em></h2>
+  <p>Get a free, no-obligation cash offer today. We respond within hours — not days.</p>
+  <a href="#contact" class="btn-primary">Get My Free Cash Offer →</a>
+</div>
+
 <!-- CONTACT -->
-<section class="sec contact-sec" id="contact">
-  <div class="contact-grid">
-    <div class="ci">
-      <div class="sec-label">Get in touch</div>
-      <h2>Ready for Your<br/><em>Cash Offer?</em></h2>
-      <p style="font-size:1rem;color:rgba(255,255,255,.7);line-height:1.9;font-weight:300;margin-bottom:2rem">Fill out the form and we'll be in touch within 24 hours with your no-obligation cash offer. Or call us right now — we answer.</p>
-      <div class="ci-detail">
-        <span>Phone</span>
-        <a href="tel:7707152915">770-715-2915</a>
-      </div>
-      <div class="ci-detail">
-        <span>Email</span>
-        <a href="mailto:Onehouseonestoryinvestments@gmail.com">Onehouseonestoryinvestments@gmail.com</a>
-      </div>
-      <div class="ci-detail">
-        <span>Service area</span>
-        <p>Atlanta & All of Georgia</p>
-      </div>
-      <div class="ci-detail">
-        <span>Business hours</span>
-        <div class="hours-grid">
-          <div class="hg-item"><strong>Mon–Fri</strong><br/>8:00 AM – 7:00 PM</div>
-          <div class="hg-item"><strong>Sat–Sun</strong><br/>9:00 AM – 5:00 PM</div>
+<section class="sec" id="contact">
+  <div class="sec-inner">
+    <div class="sec-label">Get in touch</div>
+    <h2>Contact <em>Us Today</em></h2>
+    <p class="sec-sub" style="margin-bottom:3rem">Fill out the form below and we'll get back to you within hours with your no-obligation cash offer.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci-item">
+          <div class="ci-icon">📞</div>
+          <div><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:7707152915">770-715-2915</a></div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">✉️</div>
+          <div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:Onehouseonestoryinvestments@gmail.com">Onehouseonestoryinvestments@gmail.com</a></div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">📍</div>
+          <div><div class="ci-label">Location</div><div class="ci-val">Atlanta, Georgia</div></div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">🕐</div>
+          <div><div class="ci-label">Business hours</div><div class="ci-val">Mon–Sat: 8AM–7PM EST</div></div>
+        </div>
+        <div style="background:var(--off2);padding:1.5rem;border-left:3px solid var(--gold);margin-top:1rem">
+          <div style="font-family:var(--font-cond);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:.5rem">Investor inquiry</div>
+          <p style="font-size:.88rem;color:var(--gray);line-height:1.75;font-weight:300">Are you an investor looking for deals? Fill out our buying criteria form and we'll add you to our private inventory list.</p>
         </div>
       </div>
-    </div>
-    <div class="cform">
-      <div class="cform-title">Get My Cash Offer</div>
-      <div class="cform-sub">Free, no-obligation offer — usually within 24 hours</div>
-      <form class="cf" action="https://formspree.io/f/mvzywgwb" method="POST">
-        <div class="cf-row">
-          <div class="cff"><label>First name</label><input type="text" name="first_name" placeholder="John" required/></div>
-          <div class="cff"><label>Last name</label><input type="text" name="last_name" placeholder="Smith" required/></div>
-        </div>
-        <div class="cff"><label>Phone number</label><input type="tel" name="phone" placeholder="(770) 000-0000" required/></div>
-        <div class="cff"><label>Email address</label><input type="email" name="email" placeholder="you@email.com" required/></div>
-        <div class="cff"><label>Property address</label><input type="text" name="address" placeholder="123 Main St, Atlanta, GA" required/></div>
-        <div class="cff">
-          <label>Your situation</label>
-          <select name="situation">
-            <option value="">Select your situation</option>
-            <option>Facing foreclosure</option>
-            <option>Inherited / probate property</option>
-            <option>Divorce</option>
-            <option>Vacant / abandoned property</option>
-            <option>Code violations or fines</option>
-            <option>Tax delinquency</option>
-            <option>Financial hardship</option>
-            <option>Just want to sell fast</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="cff"><label>Additional details</label><textarea name="message" placeholder="Tell us a little more about your property and situation..."></textarea></div>
-        <button type="submit" class="btn-green">Get My Free Cash Offer →</button>
-        <p style="font-size:.68rem;color:var(--gray);margin-top:.75rem;text-align:center">No obligation. No fees. We respond within 24 hours.</p>
-      </form>
+      <div class="contact-form">
+        <form class="cf" action="https://formspree.io/f/mvzywgwb" method="POST">
+          <input type="hidden" name="company" value="One House One Story Investments LLC"/>
+          <div class="cff"><label>Full name</label><input type="text" name="name" placeholder="Your full name" required/></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="cff"><label>Phone</label><input type="tel" name="phone" placeholder="(000) 000-0000" required/></div>
+            <div class="cff"><label>Email</label><input type="email" name="email" placeholder="you@email.com"/></div>
+          </div>
+          <div class="cff"><label>Property address</label><input type="text" name="address" placeholder="123 Main St, Atlanta, GA" required/></div>
+          <div class="cff">
+            <label>Your situation</label>
+            <select name="situation" required>
+              <option value="">Select your situation</option>
+              <option>I need to sell fast</option>
+              <option>Facing foreclosure</option>
+              <option>Inherited / probate property</option>
+              <option>Divorce</option>
+              <option>Vacant / abandoned property</option>
+              <option>Code violations or fines</option>
+              <option>Distressed / needs repairs</option>
+              <option>Investor looking for deals</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="cff"><label>Additional details</label><textarea name="message" placeholder="Tell us more about your property and situation..."></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;font-size:.88rem;padding:1.1rem">Get My Free Cash Offer →</button>
+          <p style="font-size:.7rem;color:var(--gray2);margin-top:.75rem;text-align:center">100% free. No obligation. We respond within hours.</p>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div>
-    <div class="flogo">One House One Story Investments LLC</div>
-    <div class="flogo-sub">Atlanta, Georgia · Buying Homes Statewide</div>
+  <div class="footer-top">
+    <div>
+      <div class="ft-logo-name">One House One Story</div>
+      <div class="ft-logo-sub">Investments LLC</div>
+      <p class="ft-desc">We are cash home buyers serving Atlanta and all of Georgia. No repairs, no commissions, no banks. Fast closings in 14–21 business days.</p>
+    </div>
+    <div>
+      <div class="ft-col-title">Quick links</div>
+      <a href="#how-it-works" class="ft-link">How It Works</a>
+      <a href="#situations" class="ft-link">We Buy</a>
+      <a href="#properties" class="ft-link">Properties</a>
+      <a href="#about" class="ft-link">About Us</a>
+      <a href="#faq" class="ft-link">FAQ</a>
+      <a href="#contact" class="ft-link">Contact</a>
+    </div>
+    <div>
+      <div class="ft-col-title">Contact</div>
+      <a href="tel:7707152915" class="ft-link">📞 770-715-2915</a>
+      <a href="mailto:Onehouseonestoryinvestments@gmail.com" class="ft-link">✉️ Email Us</a>
+      <div class="ft-link">📍 Atlanta, Georgia</div>
+      <div class="ft-link">🕐 Mon–Sat: 8AM–7PM</div>
+    </div>
   </div>
-  <div class="flinks">
-    <a href="#how">How It Works</a>
-    <a href="#about">About</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
+  <hr/>
+  <div class="footer-bottom">
+    <div class="f-copy">© 2025 One House One Story Investments LLC · All Rights Reserved</div>
+    <div class="f-legal">We are not real estate agents. We are professional home buyers. Results may vary.</div>
   </div>
-  <div class="fcopy">© 2025 OHOS Investments LLC · 770-715-2915</div>
 </footer>
 
 <script>
+function toggleNav(){
+  document.getElementById('nav-links').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function closeNav(){
+  document.getElementById('nav-links').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
 function toggleFaq(el){
-  const item=el.parentElement;
-  const isOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
   if(!isOpen) item.classList.add('open');
 }
 </script>
